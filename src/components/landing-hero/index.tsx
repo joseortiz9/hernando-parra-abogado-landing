@@ -3,8 +3,8 @@ import {LandingHeroWrapper} from "./styles";
 
 const LandingHeroSection = () => {
     return (
-        <LandingHeroWrapper>
-            ITS MEE
+        <LandingHeroWrapper id="intro">
+
         </LandingHeroWrapper>
     );
 };

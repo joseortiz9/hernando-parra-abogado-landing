@@ -1,22 +1,38 @@
 import styled from 'styled-components';
 
-export const UpButton = styled.div`
+const UpButton = styled.div`
   box-sizing: border-box;
+  display: flex;
+  align-content: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  color: rgba(0, 0, 0, 0.65);
-  font-size: 14px;
+  background: #01A85B;
+  opacity: 0.8;
   line-height: 1.5715;
   list-style: none;
   position: fixed;
-  right: 100px;
+  right: 50px;
   bottom: 50px;
   z-index: 10;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
-
-  @media screen and (max-width: 1024px) {
-    display: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+  transition: all 0.4s ease;
+  @media screen and (max-width: 768px) {
+    right: 30px;
+    bottom: 30px;
   }
 `;
+
+const UpArrow = styled.i`
+    border-color: transparent transparent white;
+    border-style: solid;
+    border-width: 13px;
+    height: 0;
+    width: 0;
+`;
+
+export {UpButton, UpArrow};

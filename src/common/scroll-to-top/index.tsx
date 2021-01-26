@@ -1,19 +1,29 @@
-import React from "react";
-import {UpButton} from "./styles";
+import React, {useCallback, useEffect, useState} from "react";
+import {UpButton, UpArrow} from "./styles";
 
 const ScrollToTop = () => {
-    const scrollUp = () => {
-        const element = document.getElementById("intro");
-        element?.scrollIntoView({
-            behavior: "smooth",
-            block: "end",
-            inline: "nearest",
-        });
+    const [showScroll, setShowScroll] = useState(false);
+    const checkScrollTop = useCallback(() => {
+            const headerHeight = window.screenY;
+            setShowScroll(window.pageYOffset > headerHeight);
+        },
+        [showScroll],
+    );
+
+    useEffect(() => {
+            window.addEventListener('scroll', checkScrollTop);
+            return () => window.removeEventListener('scroll', checkScrollTop);
+        },
+        [checkScrollTop],
+    );
+
+    const scrollTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     return (
-        <UpButton onClick={scrollUp}>
-            UP
+        <UpButton onClick={scrollTop} className={"d-" + (showScroll ? "flex" : "none")}>
+            <UpArrow />
         </UpButton>
     );
 };

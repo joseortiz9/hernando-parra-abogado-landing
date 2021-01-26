@@ -4,12 +4,12 @@ import SocialMediaContainer from "../social-media-container";
 
 const Footer = () => {
     return (
-        <footer className="bg-dark">
-            <Container>
+        <footer className="bg-dark py-4">
+            <Container className="d-flex justify-content-between">
                 <span className="text-white font-weight-bold">
                     &copy; 2020 SAPEEE. All rights reserved
                 </span>
-                <span className="ml-auto">
+                <span>
                     <SocialMediaContainer />
                 </span>
             </Container>
