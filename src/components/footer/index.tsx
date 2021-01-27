@@ -1,6 +1,6 @@
 import React from "react";
 import {Container} from "react-bootstrap";
-import SocialMediaContainer from "../social-media-container";
+import SocialMediaContainer from "../../common/social-media-container";
 
 const Footer = () => {
     return (

@@ -1,10 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import {Container, Nav, Navbar as BootstrapNavbar} from "react-bootstrap";
 import {SocialMediaContainer} from "../../components";
 import HamburgMenu from "../hamburg-menu";
 import NavLink from "./nav-link";
 import {navsLanding} from "../../router/NavsLanding";
-import {useShowOverlay} from "../../contexts/ShowOverlayProvider";
 
 const Navbar = () => {
     return (
@@ -23,7 +22,7 @@ const Navbar = () => {
                     }
                 </Nav>
                 <Nav>
-                    <SocialMediaContainer />
+                    <SocialMediaContainer bgStyle="green" />
                 </Nav>
             </Container>
         </BootstrapNavbar>
