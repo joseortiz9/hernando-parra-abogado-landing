@@ -12,6 +12,9 @@ const HeaderWrapper = styled.header`
         margin-right: 30px;
       }
     }
+    @media (max-width: 768px) {
+        padding: 1.5rem 1rem;
+    }
   }
   .sticky-nav-active {
     nav.navbar {
@@ -25,7 +28,7 @@ const HeaderWrapper = styled.header`
       @media (max-width: 991px) {
         padding: 10px 15px 10px;
       }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         padding: 20px 15px 10px;
       }
       @media (max-width: 480px) {

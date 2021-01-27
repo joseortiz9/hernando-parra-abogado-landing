@@ -5,9 +5,13 @@ import HamburgMenu from "../hamburg-menu";
 import NavLink from "./nav-link";
 import {navsLanding} from "../../router/NavsLanding";
 
-const Navbar = () => {
+interface INavbarProps {
+    isAtTop: boolean
+}
+
+const Navbar = ({isAtTop}: INavbarProps) => {
     return (
-        <BootstrapNavbar>
+        <BootstrapNavbar fixed="top">
             <Container>
                 <span className="d-md-none">
                     <HamburgMenu />
@@ -22,7 +26,7 @@ const Navbar = () => {
                     }
                 </Nav>
                 <Nav>
-                    <SocialMediaContainer bgStyle="green" />
+                    <SocialMediaContainer bgStyle={(isAtTop) ? "white" : "green"} />
                 </Nav>
             </Container>
         </BootstrapNavbar>
