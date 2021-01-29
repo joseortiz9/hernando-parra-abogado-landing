@@ -1,5 +1,11 @@
 import React from "react";
-import {AboutMeSection, CareerPathSection, LandingHeroSection} from "../../components";
+import {
+    AboutMeSection,
+    LandingHeroSection,
+    ManagementPlanSection,
+    PrinciplesValuesSection,
+    TimeToChangeSection
+} from "../../components";
 import ScrollToTop from "../../common/scroll-to-top";
 
 const Home = () => {
@@ -7,8 +13,12 @@ const Home = () => {
         <>
             <ScrollToTop />
             <LandingHeroSection />
-            <AboutMeSection />
-            <CareerPathSection />
+            <TimeToChangeSection />
+            <div className="bgSectionsWrapper">
+                <AboutMeSection />
+                <PrinciplesValuesSection />
+            </div>
+            <ManagementPlanSection />
         </>
     );
 };

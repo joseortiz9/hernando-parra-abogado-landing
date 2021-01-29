@@ -5,7 +5,7 @@ import LandingGuy from "../../assets/landing-guy.png";
 
 const LandingHeroSection = () => {
     return (
-        <LandingHeroWrapper className="d-flex align-items-center">
+        <LandingHeroWrapper className="d-flex align-items-center pt-0" id="intro-banner">
             <BannerSquareShape />
             <LandingGuyWrapper>
                 <Image src={LandingGuy} alt="landing-guy" />
@@ -20,7 +20,8 @@ const LandingHeroSection = () => {
                         Candidato a rector
                     </h1>
                     <p className="lead mt-2">
-                        Profesor Emérito y abogado con más de 30 años de experiencia de la Universidad Externado de Colombia.
+                        Profesor <b>Emérito</b> y <b>abogado con más de 30 años de experiencia</b>
+                        de la Universidad Externado de Colombia.
                     </p>
                     <Button className="btn-success btn-lg mt-4">Ver video</Button>
                 </FeatureWrapper>

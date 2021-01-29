@@ -3,6 +3,7 @@ import {createGlobalStyle} from "styled-components";
 const GlobalStyle = createGlobalStyle`
     section {
       margin-bottom: 100px;
+      padding-top: 5rem;
     }
 
     p.lead {
@@ -10,6 +11,11 @@ const GlobalStyle = createGlobalStyle`
         @media screen and (max-width: 578px) {
           font-size: 14px;
         }
+    }
+    
+    .bgSectionsWrapper {
+      background: #F9FFFC;
+      //z-index: auto;
     }
 `;
 
