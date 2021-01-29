@@ -1,78 +1,50 @@
 import React from "react";
 import {Col, Container, Row, Image, Button} from "react-bootstrap";
-import {ImgShadowWrapper, WidthLimiterWrapper} from "./styles";
+import {ImgShadowWrapper, WidthLimiterWrapper, AboutMeSectionWrapper} from "./styles";
 import AboutMeImg from "../../assets/about-me.jpg";
 import TitleShadowed from "../../common/title-shadowed";
+import 'react-vertical-timeline-component/style.min.css';
+import SimpleTimeline from "../../common/simple-timeline";
 
 const AboutMeSection = () => {
     return (
-        <section id="about-me">
+        <AboutMeSectionWrapper id="about-me">
             <Container>
                 <Row>
-                    <Col xs={12} md={6} className="order-2 order-md-1">
+                    <Col xs={12} md={6}>
                         <WidthLimiterWrapper>
                             <ImgShadowWrapper>
                                 <Image src={AboutMeImg} alt="about-me-banner" fluid />
                             </ImgShadowWrapper>
-                        </WidthLimiterWrapper>
-                    </Col>
-                    <Col xs={12} md={6} className="order-1 order-md-2">
-                        <WidthLimiterWrapper>
-                            <TitleShadowed text="Sobre mí" className="mb-3" translateX={-120} translateY={-50} />
                             <p className="lead">
-                                Mi nombre es Luís Hernando Parra Nieto, soy abogado graduado de la
-                                Universidad Externado de Colombia en 1985, con más de 30 años de
-                                experiencia en litigio en procesos declarativos, ejecutivos, acciones
-                                populares y de grupo. He complementado mi formación académica con cursos
-                                de Perfeccionamiento en derecho fiduciario realizados en Brasil, y en derecho
-                                anglosajón, IDL Washington 1995. Además, poseo un diplomado en Arbitraje
-                                Internacional en la Cámara de Comercio Internacional, París 2003. Tengo un Máster
-                                en Derecho LLM de Boston University Law School y un diplomado en Negociación de
-                                Controversias de Harvard Law School.
+                                Mi nombre es <b>Hernando Parra Nieto</b>, tengo 58 años y he sido a lo largo de mi
+                                vida un “<b>externadista de tiempo completo</b>”. Empecé mi carrera universitaria en
+                                el Externado como monitor en la facultad de derecho, he sido profesor hasta
+                                la fecha, fui director del Departamento de Derecho Civil y asumí la Secretaría
+                                General de la Universidad durante 14 años, bajo la rectoría de Fernando
+                                Hinestrosa, que fue un espacio con las puertas abiertas para construir un
+                                Externado participativo y cercano.
                             </p>
-                        </WidthLimiterWrapper>
-                    </Col>
-                </Row>
-            </Container>
-
-
-
-            <Container>
-                <Row>
-                    <Col xs={12} md={6} className="d-flex">
-                        <div className="d-flex justify-content-center flex-column-reverse flex-md-column">
                             <p className="lead">
-                                Mi desempeño profesional se ha orientado hacia las áreas de
-                                derecho comercial, bancario, financiero y fiduciario.
-                                He prestado asesoría en contratos de concesión celebrados
-                                bajo Asociaciones Público Privadas. También he sido asesor
-                                en Contratos de Concesión bajo modalidad “4G”, y actualmente
-                                me desempeño como Amigable Componedor en varias Concesiones de
-                                Infraestructura Vial. Por último, cabe resaltar que fui profesor
-                                Emérito (2016) de la Universidad Externado de Colombia, de la cual
-                                también fui Secretario General entre 1996 y 2009.
+                                Hoy quiero ser Rector del Externado porque tengo una visión amplia y orientada
+                                al futuro de nuestra universidad, que propongo hacer realidad de la mano de la
+                                comunidad externadista.  Mi plan de desarrollo y gestión universitaria se llama
+                                “<b>Externado 2027: volvernos a encontrar</b>”. Aquí les presento los principios de una
+                                rectoría abierta y comprometida con cada miembro de la comunidad externadista,
+                                así como los objetivos estratégicos y las estrategias que orientarán nuestra gestión.
                             </p>
                             <Button variant="success">Descargar CV</Button>
-                        </div>
-
+                        </WidthLimiterWrapper>
                     </Col>
-                    <Col xs={12} md={6} className="d-flex justify-content-center">
-                        <div className="p-2" style={{background: "#C1E5C0", width: "460px"}}>
-                            <h2 className="text-white">Experiencia</h2>
-                            <ul>
-                                <li>Abogado interno de Citibank Colombia.</li>
-                                <li>Vicepresidente Jurídico y Secretario General del Banco Colpatria.</li>
-                                <li>Abogado litigante y consultor en Derecho Privado y Financiero desde 1994.</li>
-                                <li>Árbitro de las Cámaras de Comercio de Bogotá y Medellín.</li>
-                                <li>Miembro de los Tribunales Disciplinarios de las Bolsas de Valores de Bogotá, año 2000 - 2006.</li>
-                                <li>Miembro del Autorregulador del Mercado de Valores AMV, hasta la fecha.</li>
-                                <li>Conjuez de la Corte Constitucional de 2007 al 2009.</li>
-                            </ul>
-                        </div>
+                    <Col xs={12} md={6}>
+                        <WidthLimiterWrapper>
+                            <TitleShadowed text="Sobre mí" className="mb-3" translateX={-120} translateY={-50} />
+                        </WidthLimiterWrapper>
+                        <SimpleTimeline  />
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </AboutMeSectionWrapper>
     );
 };
 
