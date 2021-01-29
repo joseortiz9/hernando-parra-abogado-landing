@@ -1,5 +1,5 @@
 import React from "react";
-import {ContainerWrapper, BgSquareShape} from "./styles";
+import {ContainerWrapper, BgSquareShape, LogoDescription} from "./styles";
 import TitleShadowed from "../../common/title-shadowed";
 import {Col, Row} from "react-bootstrap";
 import {ReactComponent as DialogsImg} from "../../assets/figures/principles/dialogs.svg";
@@ -10,8 +10,8 @@ const PrinciplesValuesSection = () => {
     return(
         <section id="principles-values" className="position-relative">
             <BgSquareShape />
-            <ContainerWrapper className="text-center py-5">
-                <TitleShadowed text="Principios y valores" className="mt-5 mb-5" translateX={-120} translateY={-60} />
+            <ContainerWrapper className="text-center py-5 overflow-hidden">
+                <TitleShadowed text="Principios y valores" className="my-5" translateX={-120} translateY={-60} />
                 <p className="lead">
                     Los principios y valores que inspirarán a nuestra rectoría serán el respeto y el
                     reconocimiento profundo a cada miembro de la comunidad universitaria, la apertura
@@ -25,19 +25,19 @@ const PrinciplesValuesSection = () => {
                     <Col xs={12} sm={4}>
                         <div className="d-flex flex-column align-items-center">
                             <DialogsImg />
-                            <span className="lead font-weight-bold">Respeto hacia la comunidad</span>
+                            <LogoDescription>Respeto hacia la comunidad</LogoDescription>
                         </div>
                     </Col>
                     <Col xs={12} sm={4}>
                         <div className="d-flex flex-column align-items-center">
                             <LoveImg />
-                            <span className="lead font-weight-bold">Apertura al diálogo</span>
+                            <LogoDescription>Apertura al diálogo</LogoDescription>
                         </div>
                     </Col>
                     <Col xs={12} sm={4}>
                         <div className="d-flex flex-column align-items-center">
                             <SocialCareImg />
-                            <span className="lead font-weight-bold">Encuentro humano</span>
+                            <LogoDescription>Encuentro humano</LogoDescription>
                         </div>
                     </Col>
                 </Row>

@@ -3,9 +3,26 @@ import styled from "styled-components";
 
 const VerticalTimelineWrapper = styled(VerticalTimeline)`
     
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+      padding: .8em .5em;
+      font-weight: 600;
+      color: #023324;
+      opacity: 1;
+    }
+    
     /* The line */
     &::before {
       background: #01512C;
+    }
+    
+    @media only screen and (max-width: 1169px) {
+      .vertical-timeline-element-content .vertical-timeline-element-date {
+        padding: 0;
+        float: none;
+        margin-top: .6em;
+        width: 100%;
+        opacity: 0.7;
+      }
     }
     
     @media only screen and (min-width: 1170px) {

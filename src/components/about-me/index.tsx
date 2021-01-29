@@ -1,6 +1,6 @@
 import React from "react";
-import {Col, Container, Row, Image, Button} from "react-bootstrap";
-import {ImgShadowWrapper, WidthLimiterWrapper, AboutMeSectionWrapper} from "./styles";
+import {Col, Row, Image, Button} from "react-bootstrap";
+import {ImgShadowWrapper, WidthLimiterWrapper, AboutMeSectionWrapper, ContainerWrapper} from "./styles";
 import AboutMeImg from "../../assets/about-me.jpg";
 import TitleShadowed from "../../common/title-shadowed";
 import 'react-vertical-timeline-component/style.min.css';
@@ -9,7 +9,7 @@ import SimpleTimeline from "../../common/simple-timeline";
 const AboutMeSection = () => {
     return (
         <AboutMeSectionWrapper id="about-me">
-            <Container>
+            <ContainerWrapper>
                 <Row>
                     <Col xs={12} md={6}>
                         <WidthLimiterWrapper>
@@ -43,7 +43,7 @@ const AboutMeSection = () => {
                         <SimpleTimeline  />
                     </Col>
                 </Row>
-            </Container>
+            </ContainerWrapper>
         </AboutMeSectionWrapper>
     );
 };

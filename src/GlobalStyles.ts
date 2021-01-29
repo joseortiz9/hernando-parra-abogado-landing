@@ -1,6 +1,11 @@
 import {createGlobalStyle} from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+    
+    b {
+      font-weight: bold !important;
+    }
+    
     section {
       margin-bottom: 100px;
       padding-top: 5rem;

@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="bg-dark py-4">
             <Container className="d-flex justify-content-between">
                 <span className="text-white font-weight-bold">
-                    &copy; 2020 SAPEEE. All rights reserved
+                    &copy; 2020 Hernando Parra. All rights reserved
                 </span>
                 <span>
                     <SocialMediaContainer />

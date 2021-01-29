@@ -11,9 +11,9 @@ const SimpleTimeline = () => {
                 ExperiencesData.map((item) => (
                     <VerticalTimelineElement key={item.props.date} {...item.props}
                                              className='vertical-timeline-element--work'
-                                             contentStyle={{background: '#C1E5C0', color: '#023324', padding: "0.5rem" }}
+                                             contentStyle={{background: '#C1E5C0', color: '#023324', padding: "0.5rem", lineHeight: "18px" }}
                                              iconStyle={{background: '#fff'}}>
-                        <span>{item.content}</span>
+                        <span dangerouslySetInnerHTML={{__html: item.content}} />
                     </VerticalTimelineElement>
                 ))
             }

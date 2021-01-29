@@ -14,7 +14,7 @@ const UpButton = styled.div`
   position: fixed;
   right: 50px;
   bottom: 50px;
-  z-index: 10;
+  z-index: 200;
   width: 45px;
   height: 45px;
   cursor: pointer;

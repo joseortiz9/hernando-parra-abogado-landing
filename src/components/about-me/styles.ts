@@ -1,6 +1,12 @@
 import styled from "styled-components";
+import {Container} from "react-bootstrap";
 
 const AboutMeSectionWrapper = styled.section``;
+
+const ContainerWrapper = styled(Container)`
+  position: relative;
+  z-index: 100;
+`;
 
 const WidthLimiterWrapper= styled.div`
   max-width: 500px;
@@ -13,4 +19,4 @@ const ImgShadowWrapper = styled.div`
     }
 `;
 
-export {ImgShadowWrapper, WidthLimiterWrapper, AboutMeSectionWrapper};
+export {ImgShadowWrapper, WidthLimiterWrapper, AboutMeSectionWrapper, ContainerWrapper};
