@@ -5,11 +5,13 @@ const HeaderWrapper = styled.header`
     background-color: transparent;
     transition: all 0.3s ease;
     .nav-link {
+      font-family: OpenSansRegular, serif, Arial;
+      font-size: 16px;
       font-weight: 600;
       color: #18191F;
       letter-spacing: 0.05em;
       &:not(:last-child) {
-        margin-right: 30px;
+        margin-right: 20px;
       }
     }
     @media (max-width: 768px) {

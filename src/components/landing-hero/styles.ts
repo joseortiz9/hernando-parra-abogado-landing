@@ -1,11 +1,25 @@
 import styled from "styled-components";
+import { ReactComponent as GreenCircleShape } from "../../assets/figures/green-cirlce-fig.svg";
+import { ReactComponent as WhiteCircleShape } from "../../assets/figures/white-cirlce-fig.svg";
+import { ReactComponent as DotsLightGreenShape } from "../../assets/figures/dots-light-green-banner.svg";
+import { ReactComponent as DotsDarkGreenShape } from "../../assets/figures/dots-dark-green-banner.svg";
 
 const LandingHeroWrapper = styled.section`
   height: 70vh;
   position: relative;
-  overflow: hidden;
   @media screen and (max-width: 767px) {
-    height: 100vh;
+    height: 80vh;
+  }
+`;
+
+const ContentWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 0;
+  @media screen and (max-width: 767px) {
+    padding-top: 7rem;
   }
 `;
 
@@ -36,16 +50,22 @@ const LandingGuyWrapper = styled.div`
   bottom: 0;
   left: 42%;
   img {
-    width: 400px;
+    width: 435px;
   }
   @media screen and (min-width: 1440px) {
-    left: 50%;
+    left: 45%;
+    img {
+      width: 450px;
+    }
   }
   @media screen and (max-width: 767px) {
     left: 40%;
     img {
-      width: 300px;
+      width: 320px;
     }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    left: 30%;
   }
 `;
 
@@ -83,4 +103,116 @@ const FeatureWrapper = styled.div`
   }
 `;
 
-export {LandingHeroWrapper, BannerSquareShape, LandingGuyWrapper, FeatureWrapper, ScrollDownLabel};
+const QuoteShapeWrapper = styled.div`
+  width: 270px;
+  position: absolute;
+  right: 15%;
+  top: 25%;
+  font-family: OpenSansItalic, serif, Arial;
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+  text-align: center;
+  div {
+    position: relative;
+    svg {
+      position: absolute;
+      &:first-child {
+        transform: scaleX(-1);
+        bottom: 50%;
+        left: -6px;
+      }
+      &:last-child {
+        right: 4px;
+        bottom: -10px;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    right: 5%;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 21px;
+    bottom: 8%;
+    left: 10%;
+    right: auto;
+    top: auto;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 19px;
+    width: 200px;
+    left: 5%;
+  }
+`;
+
+const GreenCircleShapeWrapper = styled(GreenCircleShape)`
+  position: absolute;
+  left: -30px;
+  top: 5%;
+`;
+
+const WhiteCircleShapeWrapper = styled(WhiteCircleShape)`
+  position: absolute;
+  right: -5px;
+  bottom: 17%;
+  @media screen and (max-width: 767px) {
+    width: 300px;
+    height: 300px;
+    bottom: auto;
+    top: 20%;
+    right: -15px;
+  }
+`;
+
+const DotsLightGreenShapeWrapper = styled(DotsLightGreenShape)`
+  position: absolute;
+  right: 5px;
+  bottom: 38%;
+  @media screen and (max-width: 767px) {
+    width: 150px;
+    height: 150px;
+    bottom: auto;
+    top: 18%;
+    right: 110px;
+  }
+`;
+
+const DotsLightGreenShapeRotatedWrapper = styled(DotsLightGreenShape)`
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 45%;
+  top: 15%;
+  transform: rotate(45deg);
+  @media screen and (min-width: 1440px) {
+    left: 50%;
+  }
+  @media screen and (max-width: 767px) {
+    top: 45%;
+    right: 110px;
+  }
+`;
+
+const DotsDarkGreenShapeWrapper = styled(DotsDarkGreenShape)`
+  position: absolute;
+  bottom: -40px;
+  left: 17%;
+  @media screen and (min-width: 1440px) {
+    left: 30%;
+  }
+`;
+
+export {
+    LandingHeroWrapper,
+    BannerSquareShape,
+    LandingGuyWrapper,
+    FeatureWrapper,
+    ScrollDownLabel,
+    GreenCircleShapeWrapper,
+    WhiteCircleShapeWrapper,
+    DotsLightGreenShapeWrapper,
+    DotsDarkGreenShapeWrapper,
+    DotsLightGreenShapeRotatedWrapper,
+    QuoteShapeWrapper,
+    ContentWrapper
+};

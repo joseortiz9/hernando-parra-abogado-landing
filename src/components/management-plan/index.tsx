@@ -1,10 +1,13 @@
 import React from "react";
 import {Col, Container, Image, Row} from "react-bootstrap";
 import TitleShadowed from "../../common/title-shadowed";
+import CvPdf from "../../assets/cv-test.pdf";
+import DefaultButton from "../../common/default-button";
+import {ReactComponent as DownloadLogo} from "../../assets/figures/download_icon.svg";
 
 const ManagementPlanSection = () => {
     return(
-        <section id="management-plan" className="overflow-hidden">
+        <section id="management-plan" className="overflow-hidden mt-5">
             <Container>
                 <Row>
                     <Col xs={12} md={6}>
@@ -18,6 +21,12 @@ const ManagementPlanSection = () => {
                                 universitaria 2021-2027. Este documento fue el resultado de un proceso de
                                 diálogo y conciliación con los profesores y estudiantes de la universidad.
                             </p>
+                            <a href={CvPdf} target="_blank" rel="noreferrer">
+                                <DefaultButton onClick={() => {}} className="btn-success py-2 px-3 mt-3">
+                                    <DownloadLogo stroke="white" className="mr-1" />
+                                    Descargar Plan
+                                </DefaultButton>
+                            </a>
                         </div>
                     </Col>
                     <Col xs={12} md={6} className="d-none d-md-flex">

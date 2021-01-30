@@ -5,6 +5,7 @@ const TitleShadowedWrapper = styled.h1`
     font-weight: 700;
     font-size: 72px;
     &::before {
+        opacity: 0.3;
         content: "${(p:ITitleShadowedProps) => p.text}";
         position: absolute;
         color: #00F076;

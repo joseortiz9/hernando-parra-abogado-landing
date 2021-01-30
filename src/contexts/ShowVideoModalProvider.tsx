@@ -8,7 +8,7 @@ export type ShowVideoModalContextType = {
 export const ShowVideoModalContext = createContext<ShowVideoModalContextType>(
     {
         showVideoModal: false,
-        setShowVideoModal: val => console.warn('no possible to open the modal')
+        setShowVideoModal: () => console.warn('no possible to open the modal')
     });
 export const useVideoModal = () => useContext(ShowVideoModalContext);
 

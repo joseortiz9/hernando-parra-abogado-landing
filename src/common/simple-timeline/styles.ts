@@ -3,6 +3,10 @@ import styled from "styled-components";
 
 const VerticalTimelineWrapper = styled(VerticalTimeline)`
     
+    .vertical-timeline-element-content {
+      border-radius: 10px;
+    }
+    
     .vertical-timeline-element-content .vertical-timeline-element-date {
       padding: .8em .5em;
       font-weight: 600;
@@ -13,6 +17,7 @@ const VerticalTimelineWrapper = styled(VerticalTimeline)`
     /* The line */
     &::before {
       background: #01512C;
+      width: 3px;
     }
     
     @media only screen and (max-width: 1169px) {
@@ -39,7 +44,7 @@ const VerticalTimelineWrapper = styled(VerticalTimeline)`
       }
     }
     .vertical-timeline-element--work .vertical-timeline-element-icon {
-      box-shadow: 0 0 0 4px #01512C, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 0 0 3px #01512C, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
     }
 `;
 

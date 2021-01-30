@@ -18,7 +18,7 @@ const TimeToChangeSection = () => {
                                 su futuro de manera <b>conjunta y colectiva</b>, recuperar la importancia de su
                                 capital humano, aprovechar plenamente su potencial institucional, construir
                                 su visión estratégica y adoptar un modelo de gestión basado en la
-                                <b>planificación participativa</b>, pensar su gobernanza y democratizarse
+                                <b> planificación participativa</b>, pensar su gobernanza y democratizarse
                                 de forma coherente con el proyecto externadista.
                             </p>
                         </WidthLimiterWrapper>

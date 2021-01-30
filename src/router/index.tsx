@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
-import GlobalStyle from "../GlobalStyles";
+import GlobalStyle from "../styles/GlobalStyles";
 import routes from "./routes";
 import {Header, Footer} from "../components";
 import SpinLoader from "../common/spinner";
