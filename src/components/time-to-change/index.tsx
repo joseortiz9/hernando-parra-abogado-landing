@@ -15,13 +15,13 @@ const TimeToChangeSection = () => {
                             <Fade direction="left" delay={300} cascade>
                             <TitleShadowed text="Hora del cambio" className="mb-3" translateX={-90} translateY={-60} />
                             <p className="lead">
-                                La <b>Universidad Externado</b> ha llegado a un momento clave de su historia.
-                                Un punto de inflexión en el que debe volver en sí misma para construir
-                                su futuro de manera <b>conjunta y colectiva</b>, recuperar la importancia de su
-                                capital humano, aprovechar plenamente su potencial institucional, construir
-                                su visión estratégica y adoptar un modelo de gestión basado en la
-                                <b> planificación participativa</b>, pensar su gobernanza y democratizarse
-                                de forma coherente con el proyecto externadista.
+                                Nuestro <b>Externado</b> ha llegado a un momento de su historia que, sin duda,
+                                definirá su futuro. Un momento de transformación que inició con la renovación
+                                de nuestro Consejo Directivo. Es la hora de unirnos todos —estudiantes;
+                                profesores y profesoras; funcionarios y funcionarias, egresados y egresadas— en
+                                torno a la construcción de la universidad que anhelamos:
+                                <b>participativa, tolerante y de excelencia académica,</b> en la cual todos podamos
+                                aportar a su consolidación.
                             </p>
                             </Fade>
                         </WidthLimiterWrapper>

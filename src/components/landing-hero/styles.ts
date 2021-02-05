@@ -10,6 +10,9 @@ const LandingHeroWrapper = styled.section`
   @media screen and (max-width: 767px) {
     height: 90vh;
   }
+  @media screen and (max-height: 801px) {
+    height: 90vh;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -55,12 +58,6 @@ const LandingGuyWrapper = styled.div`
   img {
     width: 450px;
   }
-  @media screen and (min-width: 1440px) {
-    left: 45%;
-    img {
-      width: 460px;
-    }
-  }
   @media screen and (max-width: 767px) {
     left: 40%;
     img {
@@ -70,13 +67,26 @@ const LandingGuyWrapper = styled.div`
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     left: 30%;
   }
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    left: 36%;
+  }
+  @media screen and (min-width: 1440px) {
+    left: 45%;
+    img {
+      width: 460px;
+    }
+  }
+  @media screen and (max-height: 801px) and (min-width: 768px) and  (max-width: 1024px) {
+    img {
+      width: 400px;
+    }
+  }
 `;
 
 const ScrollDownLabel = styled.span`
+  width: 50px;
   position: absolute;
-  color: white;
-  font-size: 13px;
-  bottom: 80px;
+  bottom: 40px;
   right: 30px;
   transform: rotate(90deg);
 `;
@@ -123,6 +133,19 @@ const FeatureWrapper = styled.div`
         line-height: 1;
       }
   }
+  @media screen and (max-height: 801px) and (min-width: 768px) and  (max-width: 1024px) {
+      h1 {
+        font-size: 55px;
+      }
+      .subtitle {
+        font-size: 35px;
+      }
+      .btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+        line-height: 1;
+      }
+  }
 `;
 
 const QuoteShapeWrapper = styled.div`
@@ -142,16 +165,23 @@ const QuoteShapeWrapper = styled.div`
       &:first-child {
         transform: scaleX(-1);
         bottom: 50%;
-        left: -6px;
+        left: -20px;
       }
       &:last-child {
-        right: 4px;
-        bottom: -10px;
+        right: -5px;
+        bottom: -8px;
       }
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 830px) {
+    right: -1%;
+    font-size: 20px;
+  }
+  @media screen and (min-width: 830px) and (max-width: 1024px) {
     right: 5%;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    right: 8%;
   }
   @media screen and (max-width: 767px) {
     font-size: 21px;

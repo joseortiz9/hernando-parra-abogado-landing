@@ -36,6 +36,10 @@ const OverlayContent = styled.div`
     &:hover, &:focus {
       color: ${darken(0.4, "#FFF")};
     }
+    @media screen and (max-width: 575px) {
+      padding: 18px 8px;
+      font-size: 18px;
+    }
   }
 `;
 

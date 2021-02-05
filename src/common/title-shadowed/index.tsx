@@ -6,12 +6,13 @@ export interface ITitleShadowedProps {
     translateX: number
     translateY: number
     className?: string
+    title?: string
 }
 
-const TitleShadowed = ({text, translateX, translateY, className}: ITitleShadowedProps) => {
+const TitleShadowed = ({title, text, translateX, translateY, className}: ITitleShadowedProps) => {
     return(
         <TitleShadowedWrapper text={text} translateX={translateX} translateY={translateY} className={className}>
-            {text}
+            {title ? title : text}
         </TitleShadowedWrapper>
     );
 };

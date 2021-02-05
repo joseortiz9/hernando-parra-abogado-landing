@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     }
     @font-face {
         font-family: OpenSansItalic;
-        font-style: italic;
+        font-style: normal;
         font-weight: 300;
         src: url(${OpenSansItalicFont});
     }

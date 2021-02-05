@@ -3,13 +3,13 @@ import * as S from "./styles";
 import {Container, Image} from "react-bootstrap";
 import LandingGuy from "../../assets/landing-guy.png";
 import DefaultButton from "../../common/default-button";
-import {useVideoModal} from "../../contexts/ShowVideoModalProvider";
 import { ReactComponent as PlayVideoLogo } from "../../assets/figures/video_icon.svg";
 import { ReactComponent as QuoteLogo } from "../../assets/figures/comillas.svg";
-import {Fade} from "react-awesome-reveal";
+import { ReactComponent as ArrowSvg } from "../../assets/figures/arrow.svg";
+import {Fade, Zoom} from "react-awesome-reveal";
 
 const LandingHeroSection = () => {
-    const { setShowVideoModal } = useVideoModal();
+    // const { setShowVideoModal } = useVideoModal();
     return (
         <S.LandingHeroWrapper className="pt-0" id="intro-banner">
             <S.DotsDarkGreenShapeWrapper className="d-none d-md-flex" />
@@ -42,7 +42,7 @@ const LandingHeroSection = () => {
                 <S.WhiteCircleShapeWrapper />
                 <S.DotsLightGreenShapeWrapper />
                 <S.DotsLightGreenShapeRotatedWrapper />
-                <Fade delay={500}>
+                <Fade delay={400}>
                     <S.QuoteShapeWrapper>
                         <div>
                             <QuoteLogo />
@@ -54,7 +54,11 @@ const LandingHeroSection = () => {
                 <S.LandingGuyWrapper>
                     <Image src={LandingGuy} alt="landing-guy" />
                 </S.LandingGuyWrapper>
-                <S.ScrollDownLabel className="d-none d-md-block">Scroll Down! &#x2192;</S.ScrollDownLabel>
+                <S.ScrollDownLabel className="d-none d-md-block">
+                    <Zoom delay={600}>
+                    <ArrowSvg fill="#FFF" />
+                    </Zoom>
+                </S.ScrollDownLabel>
             </S.ContentWrapper>
         </S.LandingHeroWrapper>
     );

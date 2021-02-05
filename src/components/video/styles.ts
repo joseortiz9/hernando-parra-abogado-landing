@@ -6,6 +6,9 @@ const SectionWrapper = styled.section`
     font-size: 40px;
     font-weight: 700;
     text-align: center;
+    @media screen and (max-width: 576px) {
+      font-size: 30px;
+    }
   }
 `;
 

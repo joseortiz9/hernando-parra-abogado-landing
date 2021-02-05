@@ -36,6 +36,9 @@ const BgSquareShape = styled.div`
   top: 45%;
   background: #EBFFEB;
   z-index: 50;
+  @media screen and (max-width: 575px) {
+      height: 62%;
+  }
 `;
 
 const FeaturesRowWrapper = styled(Row)`
