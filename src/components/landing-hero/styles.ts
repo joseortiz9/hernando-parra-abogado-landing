@@ -8,7 +8,7 @@ const LandingHeroWrapper = styled.section`
   height: 70vh;
   position: relative;
   @media screen and (max-width: 767px) {
-    height: 80vh;
+    height: 90vh;
   }
 `;
 
@@ -20,6 +20,9 @@ const ContentWrapper = styled.div`
   padding-top: 0;
   @media screen and (max-width: 767px) {
     padding-top: 7rem;
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 5rem;
   }
 `;
 
@@ -90,16 +93,35 @@ const FeatureWrapper = styled.div`
     color: #0B252A;
     font-size: 40px;
   }
+  @media screen and (max-width: 575px) {
+    h1:first-child {
+      line-height: 40px;
+      max-width: 90%;
+    }
+    h1.subtitle {
+      font-size: 25px;
+      line-height: 30px;
+      max-width: 80%;
+    }
+    .lead {
+      line-height: 20px;
+    }
+  }
   @media screen and (max-width: 767px) {
-  * {
-    max-width: 60%;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  .subtitle {
-    font-size: 28px;
-  }
+      * {
+        max-width: 60%;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      .subtitle {
+        font-size: 28px;
+      }
+      .btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 18px;
+        line-height: 1;
+      }
   }
 `;
 

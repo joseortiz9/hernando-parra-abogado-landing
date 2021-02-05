@@ -5,6 +5,7 @@ import CommerceLogo from "../assets/logos/timeline/camara-comercio.png";
 import LawLogo from "../assets/logos/timeline/Group.png";
 import ColpatriaLogo from "../assets/logos/timeline/colpatria.png";
 import CitiLogo from "../assets/logos/timeline/citi.png";
+import ExternadoLogo from "../assets/logos/timeline/externado.png";
 
 export const ExperiencesData = [
     {
@@ -42,18 +43,10 @@ export const ExperiencesData = [
     {
         props: {
             date: '1996 - 2009',
-            icon: <Image src={CitiLogo} />,
+            icon: <Image src={ExternadoLogo} />,
         },
         content:
             'Secretario General de la <b>Universidad Externado de Colombia</b>.',
-    },
-    {
-        props: {
-            date: '1994 - 1996',
-            icon: <Image src={CitiLogo} />,
-        },
-        content:
-            'Director del departamento de Derecho Civil en <b> Externado de Colombia</b>.',
     },
     {
         props: {
@@ -62,6 +55,14 @@ export const ExperiencesData = [
         },
         content:
             'Abogado litigante y consultor en <b>Derecho Privado y Financiero</b>.',
+    },
+    {
+        props: {
+            date: '1994 - 1996',
+            icon: <Image src={ExternadoLogo} />,
+        },
+        content:
+            'Director del departamento de Derecho Civil en <b> Externado de Colombia</b>.',
     },
     {
         props: {

@@ -1,6 +1,7 @@
 import React from "react";
 import {
     AboutMeSection,
+    ContactUsSection,
     LandingHeroSection,
     ManagementPlanSection,
     PrinciplesValuesSection,
@@ -24,6 +25,7 @@ const Home = () => {
             </div>
             <ManagementPlanSection />
             <VideoSection />
+            <ContactUsSection />
         </ShowVideoModalProvider>
     );
 };

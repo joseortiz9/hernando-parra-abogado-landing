@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+const SectionWrapper = styled.section`
+  background: #EBFFEB;
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+`;
+
 const VideoWrapper = styled.div`
   position: relative;
   cursor: pointer;
@@ -29,4 +38,4 @@ const PlayButtonWrapper = styled.div`
   }
 `;
 
-export {VideoWrapper, PlayButtonWrapper};
+export {VideoWrapper, PlayButtonWrapper, SectionWrapper};

@@ -7,3 +7,4 @@ export { default as TimeToChangeSection } from "./time-to-change/index";
 export { default as PrinciplesValuesSection } from "./principles-values/index";
 export { default as ManagementPlanSection } from "./management-plan/index";
 export { default as VideoSection } from "./video/index";
+export { default as ContactUsSection } from "./contact-us/index";

@@ -16,6 +16,14 @@ const TitleShadowedWrapper = styled.h1`
         transform: ${(p:ITitleShadowedProps) => "translate("+p.translateX+"px, "+p.translateY+"px)"};
         line-height: 85px;
         z-index: -1;
+        @media screen and (max-width: 767px) {
+          font-size: 52px;
+          line-height: 50px;
+          transform: ${(p:ITitleShadowedProps) => "translate("+(p.translateX+70)+"px, "+(p.translateY+20)+"px)"};
+        }
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 42px;
     }
 `;
 

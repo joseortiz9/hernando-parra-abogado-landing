@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Container} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
 import {ReactComponent as DotsDarkGreenShape} from "../../assets/figures/dots-dark-green-about-us-sec.svg";
 
 const ContainerWrapper = styled(Container)`
@@ -7,6 +7,12 @@ const ContainerWrapper = styled(Container)`
   border: 1px solid rgba(1, 81, 44, 0.1);
   z-index: 100;
   position: relative;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  @media screen and (max-width: 767px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   @media screen and (min-width: 319px) and (max-width: 430px) {
     max-width: 300px;
   }
@@ -30,6 +36,15 @@ const BgSquareShape = styled.div`
   top: 45%;
   background: #EBFFEB;
   z-index: 50;
+`;
+
+const FeaturesRowWrapper = styled(Row)`
+  img {
+    @media screen and (max-width: 767px) {
+      width: 90px;
+      height: 90px;
+    }
+  }
 `;
 
 const LogoDescription = styled.span`
@@ -58,4 +73,4 @@ const DotsDarkGreenShapeRightWrapper = styled(DotsDarkGreenShape)`
   z-index: -1;
 `;
 
-export {ContainerWrapper, BgSquareShape, LogoDescription, DotsDarkGreenShapeLeftWrapper, DotsDarkGreenShapeRightWrapper, OverFlowWrapper};
+export {ContainerWrapper, BgSquareShape, LogoDescription, DotsDarkGreenShapeLeftWrapper, DotsDarkGreenShapeRightWrapper, OverFlowWrapper, FeaturesRowWrapper};
