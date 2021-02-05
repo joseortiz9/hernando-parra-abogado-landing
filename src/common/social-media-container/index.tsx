@@ -1,6 +1,6 @@
 import React from "react";
 import SocialIconWrapper from "./social-icon-wrapper";
-import {ReactComponent as LogoInstagram} from "../../assets/logos/instagram.svg";
+import {ReactComponent as LogoTwitter} from "../../assets/logos/twitter.svg";
 
 export interface IBgStyleProp {
     bgStyle?: "green" | "white"
@@ -12,9 +12,8 @@ interface ISocialMediaContainer {
 const SocialMediaContainer = ({classes = "", bgStyle = "white"}: ISocialMediaContainer & IBgStyleProp) => {
     return (
         <div className={classes}>
-            <SocialIconWrapper logoComponent={LogoInstagram} bgStyle={bgStyle} />
-            <SocialIconWrapper logoComponent={LogoInstagram} bgStyle={bgStyle} />
-            <SocialIconWrapper logoComponent={LogoInstagram} bgStyle={bgStyle} lastElement />
+            {/*<SocialIconWrapper logoComponent={LogoInstagram} bgStyle={bgStyle} url="google.com" />*/}
+            <SocialIconWrapper logoComponent={LogoTwitter} bgStyle={bgStyle} url="https://twitter.com/hernadoparran" lastElement />
         </div>
     );
 };

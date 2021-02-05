@@ -23,7 +23,7 @@ const OverlayContent = styled.div`
   width: 100%;
   text-align: center;
   padding: 0 18px;
-  a {
+  a:not(:last-child) {
     border-top: 0.5px solid white;
     border-bottom: 0.5px solid white;
     padding: 22px 8px;

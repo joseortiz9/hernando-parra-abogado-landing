@@ -1,5 +1,5 @@
 import React from "react";
-import {ContainerWrapper, BgSquareShape, LogoDescription} from "./styles";
+import * as S from "./styles";
 import TitleShadowed from "../../common/title-shadowed";
 import {Col, Row, Image} from "react-bootstrap";
 import DialogsImg from "../../assets/figures/principles/dialogs.svg";
@@ -9,8 +9,10 @@ import SocialCareImg from "../../assets/figures/principles/social-care.svg";
 const PrinciplesValuesSection = () => {
     return(
         <section id="principles-values" className="position-relative">
-            <BgSquareShape />
-            <ContainerWrapper className="text-center py-5 overflow-hidden">
+            <S.BgSquareShape />
+            <S.ContainerWrapper className="text-center py-5 position-relative overflow-hidden">
+                <S.DotsDarkGreenShapeLeftWrapper />
+                <S.DotsDarkGreenShapeRightWrapper />
                 <TitleShadowed text="Principios y valores" className="my-5" translateX={-120} translateY={-60} />
                 <p className="lead text-justify">
                     Los principios y valores que inspirarán a nuestra rectoría serán el respeto y el
@@ -25,23 +27,23 @@ const PrinciplesValuesSection = () => {
                     <Col xs={12} sm={4}>
                         <div className="d-flex flex-column align-items-center">
                             <Image src={SocialCareImg} />
-                            <LogoDescription>Respeto hacia la comunidad</LogoDescription>
+                            <S.LogoDescription>Respeto hacia la comunidad</S.LogoDescription>
                         </div>
                     </Col>
                     <Col xs={12} sm={4}>
                         <div className="d-flex flex-column align-items-center">
                             <Image src={DialogsImg} />
-                            <LogoDescription>Apertura al diálogo</LogoDescription>
+                            <S.LogoDescription>Apertura al diálogo</S.LogoDescription>
                         </div>
                     </Col>
                     <Col xs={12} sm={4}>
                         <div className="d-flex flex-column align-items-center">
                             <Image src={LoveImg} />
-                            <LogoDescription>Encuentro humano</LogoDescription>
+                            <S.LogoDescription>Encuentro humano</S.LogoDescription>
                         </div>
                     </Col>
                 </Row>
-            </ContainerWrapper>
+            </S.ContainerWrapper>
         </section>
     );
 };

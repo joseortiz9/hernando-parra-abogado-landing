@@ -1,15 +1,10 @@
-import React, {ReactNode} from "react";
+import React from "react";
 import {ButtonWrapper} from "./styles";
+import {ButtonProps} from "react-bootstrap";
 
-interface IDefaultButtonProps {
-    className: string
-    children: ReactNode
-    onClick: () => void
-}
-
-const DefaultButton = ({className, children, onClick}: IDefaultButtonProps) => {
+const DefaultButton = ({className, children, onClick, href, target}: ButtonProps) => {
     return(
-        <ButtonWrapper className={className} onClick={onClick}>{children}</ButtonWrapper>
+        <ButtonWrapper className={className} onClick={onClick} href={href} target={target}>{children}</ButtonWrapper>
     );
 };
 

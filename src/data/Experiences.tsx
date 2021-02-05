@@ -41,6 +41,22 @@ export const ExperiencesData = [
     },
     {
         props: {
+            date: '1996 - 2009',
+            icon: <Image src={CitiLogo} />,
+        },
+        content:
+            'Secretario General de la <b>Universidad Externado de Colombia</b>.',
+    },
+    {
+        props: {
+            date: '1994 - 1996',
+            icon: <Image src={CitiLogo} />,
+        },
+        content:
+            'Director del departamento de Derecho Civil en <b> Externado de Colombia</b>.',
+    },
+    {
+        props: {
             date: '1994 - Actualidad',
             icon: <Image src={LawLogo} />,
         },

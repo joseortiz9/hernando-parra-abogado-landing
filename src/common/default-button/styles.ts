@@ -10,6 +10,10 @@ const ButtonWrapper = styled(Button)`
     background: ${darken(0.05, "#77BC1F")};
     border: 0;
   }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    display: block;
+  }
 `;
 
 export {ButtonWrapper};

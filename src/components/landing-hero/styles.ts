@@ -50,18 +50,18 @@ const LandingGuyWrapper = styled.div`
   bottom: 0;
   left: 42%;
   img {
-    width: 435px;
+    width: 450px;
   }
   @media screen and (min-width: 1440px) {
     left: 45%;
     img {
-      width: 450px;
+      width: 460px;
     }
   }
   @media screen and (max-width: 767px) {
     left: 40%;
     img {
-      width: 320px;
+      width: 340px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {

@@ -1,9 +1,11 @@
 import React from "react";
 import {Col, Container, Image, Row} from "react-bootstrap";
 import TitleShadowed from "../../common/title-shadowed";
-import CvPdf from "../../assets/cv-test.pdf";
+import PlanPdf from "../../assets/documents/management-plan-final.pdf";
+import PlanImg from  "../../assets/management-plan-final.png";
 import DefaultButton from "../../common/default-button";
 import {ReactComponent as DownloadLogo} from "../../assets/figures/download_icon.svg";
+import {PlanImgWrapper} from "./styles";
 
 const ManagementPlanSection = () => {
     return(
@@ -21,16 +23,20 @@ const ManagementPlanSection = () => {
                                 universitaria 2021-2027. Este documento fue el resultado de un proceso de
                                 diálogo y conciliación con los profesores y estudiantes de la universidad.
                             </p>
-                            <a href={CvPdf} target="_blank" rel="noreferrer">
-                                <DefaultButton onClick={() => {}} className="btn-success py-2 px-3 mt-3">
-                                    <DownloadLogo stroke="white" className="mr-1" />
-                                    Descargar Plan
-                                </DefaultButton>
-                            </a>
+                            <DefaultButton href={PlanPdf} target="_blank" className="btn-success py-3 py-md-2 px-3 mt-3 mb-0 mb-md-3">
+                                <DownloadLogo stroke="white" className="mr-1" />
+                                Descargar Plan
+                            </DefaultButton>
                         </div>
                     </Col>
-                    <Col xs={12} md={6} className="d-none d-md-flex">
-                        <Image className="pl-5" src="https://via.placeholder.com/500" fluid />
+                    <Col xs={12} md={6}>
+                        <div className="pl-md-5 w-100 h-100">
+                            <PlanImgWrapper className="shadow rounded overflow-hidden w-100 h-100 mt-5 mt-md-0">
+                                <a href={PlanPdf} target="_blank" rel="noreferrer">
+                                    <Image className="" src={PlanImg} fluid />
+                                </a>
+                            </PlanImgWrapper>
+                        </div>
                     </Col>
                 </Row>
             </Container>
