@@ -11,7 +11,7 @@ const VideoSection = () => {
     return(
         <SectionWrapper id="video-section" className="pb-5 mb-4">
             <Container>
-                <Fade>
+                <Fade damping={0.1}>
                     <h1>Próximamente encontrarás un video en esta sección</h1>
                     <VideoWrapper className="mt-4 shadow" onClick={() => {}/*setShowVideoModal(true)*/}>
                         {/*<PlayButtonWrapper>*/}

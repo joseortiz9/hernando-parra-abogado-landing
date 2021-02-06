@@ -19,7 +19,7 @@ const AboutMeSection = () => {
                     <Col xs={12} md={6}>
                         <S.WidthLimiterWrapper className="d-flex flex-column">
                             <TitleShadowed text="Sobre mí" className="d-flex order-0 d-md-none mb-3" translateX={-120} translateY={-50} />
-                            <Fade direction="left" cascade damping={0.3} delay={200}>
+                            <Fade direction="left" cascade damping={0.1} delay={200}>
                                 <S.ImgShadowWrapper className="order-2 order-md-1 my-5 my-md-0 mb-md-5">
                                     <Image src={AboutMeImg} alt="about-me-banner" fluid />
                                     <S.DotsLightGreenShapeRotatedWrapper className="d-none d-sm-flex" />
@@ -53,7 +53,7 @@ const AboutMeSection = () => {
                     </Col>
                     <Col xs={12} md={6}>
                         <S.WidthLimiterWrapper>
-                            <Fade direction="right">
+                            <Fade direction="right" damping={0.1}>
                             <TitleShadowed text="Sobre mí" className="d-none d-md-flex mb-5" translateX={-120} translateY={-50} />
                             </Fade>
                         </S.WidthLimiterWrapper>

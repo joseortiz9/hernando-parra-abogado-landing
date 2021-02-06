@@ -14,10 +14,10 @@ const ContainerWrapper = styled(Container)`
     padding-right: 2rem;
   }
   @media screen and (min-width: 319px) and (max-width: 430px) {
-    max-width: 300px;
+    max-width: 320px;
   }
   @media screen and (min-width: 430px) and (max-width: 576px) {
-    max-width: 400px;
+    max-width: 420px;
   }
 `;
 

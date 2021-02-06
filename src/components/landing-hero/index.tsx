@@ -54,12 +54,13 @@ const LandingHeroSection = () => {
                 <S.LandingGuyWrapper>
                     <Image src={LandingGuy} alt="landing-guy" />
                 </S.LandingGuyWrapper>
-                <S.ScrollDownLabel className="d-none d-md-block">
-                    <Zoom delay={600}>
-                    <ArrowSvg fill="#FFF" />
-                    </Zoom>
-                </S.ScrollDownLabel>
             </S.ContentWrapper>
+            <S.ScrollDownLabel onClick={() => document.getElementById("time-to-change")?.scrollIntoView({behavior: "smooth"})}
+                               className="d-none d-md-block">
+                <Zoom delay={600}>
+                    <ArrowSvg fill="#FFF" />
+                </Zoom>
+            </S.ScrollDownLabel>
         </S.LandingHeroWrapper>
     );
 };

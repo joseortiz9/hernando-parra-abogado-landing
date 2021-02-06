@@ -14,7 +14,7 @@ const PrinciplesValuesSection = () => {
             <S.ContainerWrapper className="text-center py-5 position-relative overflow-hidden">
                 <S.DotsDarkGreenShapeLeftWrapper />
                 <S.DotsDarkGreenShapeRightWrapper />
-                <Fade cascade>
+                <Fade cascade damping={0.1}>
                     <TitleShadowed text="Principios y valores" className="my-5" translateX={-120} translateY={-60} />
                     <p className="lead text-justify">
                         Hoy quiero ser Rector del Externado porque tengo una visión amplia y orientada

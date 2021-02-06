@@ -76,19 +76,33 @@ const LandingGuyWrapper = styled.div`
       width: 460px;
     }
   }
-  @media screen and (max-height: 801px) and (min-width: 768px) and  (max-width: 1024px) {
+  @media screen and (max-height: 900px) and (min-width: 768px) {
     img {
-      width: 400px;
+      width: 380px;
     }
   }
 `;
 
 const ScrollDownLabel = styled.span`
-  width: 50px;
+  width: 35px;
   position: absolute;
   bottom: 40px;
-  right: 30px;
+  right: 5px;
+  &:hover svg {
+  transition: 0.3s all ease-in-out;
+    transform: scale(1.3);
+    cursor: pointer;
+  }
   transform: rotate(90deg);
+  @media (min-width: 768px) {
+    right: calc((100vw - 720px)/2);
+  }
+  @media (min-width: 992px) {
+    right: calc((100vw - 960px)/2);
+  }
+  @media (min-width: 1200px) {
+  right: calc((100vw - 1140px)/2);
+  }
 `;
 
 const FeatureWrapper = styled.div`
@@ -165,11 +179,14 @@ const QuoteShapeWrapper = styled.div`
       &:first-child {
         transform: scaleX(-1);
         bottom: 50%;
-        left: -20px;
+        left: -43px;
       }
       &:last-child {
-        right: -5px;
-        bottom: -8px;
+        right: -20px;
+        bottom: -15px;
+      }
+      @media screen and (max-width: 575px) {
+        width: 40px;
       }
     }
   }

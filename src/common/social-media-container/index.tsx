@@ -13,7 +13,7 @@ const SocialMediaContainer = ({classes = "", bgStyle = "white"}: ISocialMediaCon
     return (
         <div className={classes}>
             {/*<SocialIconWrapper logoComponent={LogoInstagram} bgStyle={bgStyle} url="google.com" />*/}
-            <SocialIconWrapper logoComponent={LogoTwitter} bgStyle={bgStyle} url="https://twitter.com/hernadoparran" lastElement />
+            <SocialIconWrapper logoComponent={LogoTwitter} bgStyle={bgStyle} url="https://twitter.com/hernandoparran" lastElement />
         </div>
     );
 };

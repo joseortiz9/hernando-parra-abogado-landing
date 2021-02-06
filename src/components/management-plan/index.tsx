@@ -15,7 +15,7 @@ const ManagementPlanSection = () => {
                 <Row>
                     <Col xs={12} md={6}>
                         <div className="position-relative" style={{maxWidth: "500px"}}>
-                            <Fade direction="left" cascade>
+                            <Fade direction="left" cascade damping={0.1}>
                                 <TitleShadowed text="Plan de gestión universitaria" className="my-5" translateX={-30} translateY={-60} />
                                 <p className="lead">
                                     Comprometido con la defensa de estos principios, y en el marco de una acción
@@ -33,7 +33,7 @@ const ManagementPlanSection = () => {
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
-                        <Fade direction="right">
+                        <Fade direction="right" damping={0.1}>
                             <div className="pl-md-5 w-100 h-100">
                                 <PlanImgWrapper className="shadow rounded overflow-hidden w-100 h-100 mt-5 mt-md-0">
                                     <a href={PlanPdf} target="_blank" rel="noreferrer">
