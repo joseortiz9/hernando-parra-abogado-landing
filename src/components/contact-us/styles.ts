@@ -2,10 +2,20 @@ import styled from "styled-components";
 import {Image} from "react-bootstrap";
 import {darken} from "polished";
 
+const LimitWidthWrapper = styled.div`
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 75%;
+  }
+`;
+
 const TitleWrapper = styled.h1`
   font-weight: 700;
-  font-size: 54px;
-  line-height: 67px;
+  font-size: 50px;
+  line-height: 47px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
   @media screen and (max-width: 767px) {
     font-size: 25px;
     line-height: 35px;
@@ -18,7 +28,7 @@ const TitleWrapper = styled.h1`
 
 const SubtitleWrapper = styled.h1`
   font-weight: 600;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 28px;
   word-break: break-all;
   a {
@@ -56,4 +66,4 @@ const DialogImgWrapper = styled(Image)`
   }
 `;
 
-export {TitleWrapper, SubtitleWrapper, DialogImgWrapper};
+export {LimitWidthWrapper, TitleWrapper, SubtitleWrapper, DialogImgWrapper};

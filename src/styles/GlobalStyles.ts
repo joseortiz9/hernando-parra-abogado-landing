@@ -1,6 +1,7 @@
 import {createGlobalStyle} from "styled-components";
 import OpenSansRegularFont from "../assets/fonts/Open_Sans/OpenSans-Regular.ttf";
 import OpenSansItalicFont from "../assets/fonts/Open_Sans/OpenSans-LightItalic.ttf";
+import OpenSansLightFont from "../assets/fonts/Open_Sans/OpenSans-Light.ttf";
 import MontserratTitleFont from "../assets/fonts/Montserrat/Montserrat-Bold.ttf";
 import MontserratSubTitleFont from "../assets/fonts/Montserrat/Montserrat-SemiBold.ttf";
 
@@ -31,6 +32,12 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 300;
         src: url(${OpenSansItalicFont});
     }
+    @font-face {
+        font-family: OpenSansLight;
+        font-style: normal;
+        font-weight: 300;
+        src: url(${OpenSansLightFont});
+    }
     
     b {
       font-weight: bold !important;
@@ -57,8 +64,15 @@ const GlobalStyle = createGlobalStyle`
       font-family: OpenSansRegular, sans-serif, Arial, Helvetica;
       font-size: 16px;
       line-height: 28px;
+      span.start-text {
+        font-weight: bold;
+        font-size: 18px;
+      }
       @media screen and (max-width: 578px) {
         font-size: 14px;
+        span.start-text {
+        font-size: 16px;
+      }
       }
     }
     

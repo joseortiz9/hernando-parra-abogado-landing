@@ -26,7 +26,7 @@ const AboutMeSection = () => {
                                 </S.ImgShadowWrapper>
                                 <p className="lead order-1 order-md-2">
                                     Es importante que la comunidad me conozca ampliamente. Mi nombre es
-                                    <b>Luis Hernando Parra Nieto</b> y todos me conocen como Hernando Parra. Tengo 58 años
+                                    <b> Luis Hernando Parra Nieto</b> y todos me conocen como Hernando Parra. Tengo 58 años
                                     de edad y mi relación con el <b>Externado</b> se remonta 40 años atrás, cuando pisé
                                     por primera vez el Bloque A como estudiante de primer año de Derecho en 1980.
                                     Durante mi carrera recibí las becas de honor por excelencia académica y,
@@ -41,7 +41,7 @@ const AboutMeSection = () => {
                                     Fui director del Departamento de Derecho Civil entre los años 1994 y 1996 y, en
                                     ese año, fui nombrado Secretario General de la Universidad, cargo que desempeñé
                                     por espacio de 14 años, bajo la rectoría del Dr. Fernando Hinestrosa, y desde
-                                    el cual trabajé por un Externado de puertas abiertas y, por ende,
+                                    el cual trabajé por un <b>Externado de puertas abiertas</b> y, por ende,
                                     cercano a la comunidad.
                                 </p>
                                 <DefaultButton href={CvPdf} target="_blank" className="btn-success py-3 py-md-2 px-3 order-4 mt-3 mb-5 mb-md-3">
@@ -54,7 +54,7 @@ const AboutMeSection = () => {
                     <Col xs={12} md={6}>
                         <S.WidthLimiterWrapper>
                             <Fade direction="right" damping={0.1}>
-                            <TitleShadowed text="Sobre mí" className="d-none d-md-flex mb-5" translateX={-120} translateY={-50} />
+                                <TitleShadowed text="Sobre mí" className="d-none d-md-flex mb-5" translateX={-120} translateY={-50} />
                             </Fade>
                         </S.WidthLimiterWrapper>
                         <SimpleTimeline />

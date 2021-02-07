@@ -15,12 +15,13 @@ const TimeToChangeSection = () => {
                             <Fade direction="left" delay={300} cascade damping={0.1}>
                                 <TitleShadowed text="Hora del cambio" className="mb-3" translateX={-90} translateY={-60} />
                                 <p className="lead">
-                                    Nuestro <b>Externado</b> ha llegado a un momento de su historia que, sin duda,
-                                    definirá su futuro. Un momento de transformación que inició con la renovación
-                                    de nuestro Consejo Directivo. Es la hora de unirnos todos —estudiantes;
-                                    profesores y profesoras; funcionarios y funcionarias, egresados y egresadas— en
-                                    torno a la construcción de la universidad que anhelamos:
-                                    <b>participativa, tolerante y de excelencia académica,</b> en la cual todos podamos
+                                    <span className="start-text">Nuestro Externado</span> ha llegado a un
+                                    momento de su historia que, sin duda, definirá su futuro. Un momento de
+                                    transformación que inició con la renovación de nuestro Consejo Directivo.
+                                    Es la hora de <b>unirnos todos</b> —estudiantes; profesores y profesoras;
+                                    funcionarios y funcionarias, egresados y egresadas— en torno a la
+                                    construcción de la universidad que anhelamos:
+                                    <b> participativa, tolerante y de excelencia académica,</b> en la cual todos podamos
                                     aportar a su consolidación.
                                 </p>
                             </Fade>

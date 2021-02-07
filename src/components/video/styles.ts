@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SectionWrapper = styled.section`
-  background: #EBFFEB;
+  //background: #EBFFEB;
   h1 {
     font-size: 40px;
     font-weight: 700;

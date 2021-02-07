@@ -6,6 +6,10 @@ const VerticalTimelineWrapper = styled(VerticalTimeline)`
     .vertical-timeline-element-content {
       border-radius: 10px;
     }
+    &.vertical-timeline--two-columns .vertical-timeline-element-icon {
+      background: #fff;
+      padding: 5px;
+    }
     
     .vertical-timeline-element-content .vertical-timeline-element-date {
       padding: .8em .5em;
@@ -38,9 +42,10 @@ const VerticalTimelineWrapper = styled(VerticalTimeline)`
           margin: 0 0 1.5em 0;
       }
       &.vertical-timeline--two-columns .vertical-timeline-element-icon {
-          width: auto;
-          height: auto;
-          margin-left: -20px;
+         width: 30px;
+         height: 30px;
+         margin-left: -15px;
+         margin-top: 10px;
       }
     }
     .vertical-timeline-element--work .vertical-timeline-element-icon {
@@ -48,4 +53,11 @@ const VerticalTimelineWrapper = styled(VerticalTimeline)`
     }
 `;
 
-export default VerticalTimelineWrapper;
+const IconWrapper = styled.div`
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  background: #01512C;
+`;
+
+export {VerticalTimelineWrapper, IconWrapper};

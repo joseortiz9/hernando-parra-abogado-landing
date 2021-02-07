@@ -27,7 +27,7 @@ const ManagementPlanSection = () => {
                                 </p>
                                 <DefaultButton href={PlanPdf} target="_blank" className="btn-success py-3 py-md-2 px-3 mt-3 mb-0 mb-md-3">
                                     <DownloadLogo stroke="white" className="mr-1" />
-                                    Descargar Plan
+                                    Conoce nuestro programa
                                 </DefaultButton>
                             </Fade>
                         </div>

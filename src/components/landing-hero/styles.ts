@@ -202,7 +202,7 @@ const QuoteShapeWrapper = styled.div`
   }
   @media screen and (max-width: 767px) {
     font-size: 21px;
-    bottom: 8%;
+    bottom: 4%;
     left: 10%;
     right: auto;
     top: auto;
@@ -211,6 +211,15 @@ const QuoteShapeWrapper = styled.div`
     font-size: 19px;
     width: 200px;
     left: 5%;
+  }
+  &::after {
+    font-family: OpenSansRegular, sans-serif, Arial, Helvetica;
+    content: "- Profesor Hernando Parra";
+    font-size: 16px;
+    line-height: 28px;
+    @media screen and (max-width: 578px) {
+      font-size: 14px;
+    }
   }
 `;
 

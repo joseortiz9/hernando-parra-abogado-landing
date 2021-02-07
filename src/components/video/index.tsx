@@ -2,7 +2,7 @@ import React from "react";
 import {Container, Image} from "react-bootstrap";
 import {/*PlayButtonWrapper,*/ SectionWrapper, VideoWrapper} from "./styles";
 // import { ReactComponent as VideoReproducerLogo } from "../../assets/figures/video_icon.svg";
-import BgVideoImg from "../../assets/video-img.png";
+import BgVideoImg from "../../assets/video-img.svg";
 // import {useVideoModal} from "../../contexts/ShowVideoModalProvider";
 import {Fade} from "react-awesome-reveal";
 

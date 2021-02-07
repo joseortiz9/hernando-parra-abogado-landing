@@ -8,22 +8,18 @@ interface INavsArray extends Array<INavLinkProps>{}
 export const navsLanding: INavsArray = [
     {
         hrefID: "time-to-change",
-        content: "Presentación"
+        content: "Inicio"
     },
     {
         hrefID: "about-me",
-        content: "Acerca de"
+        content: "Sobre mí"
     },
     {
         hrefID: "principles-values",
-        content: "Principios"
+        content: "Volvernos a encontrar"
     },
     {
         hrefID: "management-plan",
-        content: "Plan de gestión"
-    },
-    {
-        hrefID: "video-section",
-        content: "Video"
+        content: "Programa"
     },
 ];

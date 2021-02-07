@@ -1,11 +1,11 @@
 import React from "react";
 import * as S from "./styles";
 import TitleShadowed from "../../common/title-shadowed";
-import {Col, Image} from "react-bootstrap";
 import DialogsImg from "../../assets/figures/principles/dialogs.svg";
 import LoveImg from "../../assets/figures/principles/love.svg";
 import SocialCareImg from "../../assets/figures/principles/social-care.svg";
 import {Fade} from "react-awesome-reveal";
+import PrincipleFeatureWrapper from "../../common/principle-feature";
 
 const PrinciplesValuesSection = () => {
     return(
@@ -17,42 +17,40 @@ const PrinciplesValuesSection = () => {
                 <Fade cascade damping={0.1}>
                     <TitleShadowed text="Principios y valores" className="my-5" translateX={-120} translateY={-60} />
                     <p className="lead text-justify">
-                        Hoy quiero ser Rector del Externado porque tengo una visión amplia y orientada
+                        Hoy quiero ser Rector del <b>Externado</b> porque tengo una visión amplia y orientada
                         al futuro de nuestra universidad, que propongo hacer realidad de la mano de la
                         comunidad externadista.  El programa de desarrollo y gestión universitaria que
                         propongo se denomina <b>“Externado 2027: volvernos a encontrar”</b>. Aquí les presento
-                        los principios de una rectoría abierta y comprometida con cada miembro de la comunidad
+                        los principios de una <b>rectoría abierta y comprometida</b> con cada miembro de la comunidad
                         externadista, así como los objetivos estratégicos y las estrategias que orientarán nuestra gestión.
                     </p>
-                    <p className="lead text-justify">
-                        Los principios y valores que inspirarán a nuestra rectoría serán el respeto y
-                        el reconocimiento profundo a cada miembro de la comunidad universitaria, la
-                        apertura constante al diálogo sin jerarquías absolutas, la creación de espacios
-                        de encuentro humano, profesional, honesto y comprometido con nuestra casa de estudios.
-                        Nos empeñaremos en la defensa de la libertad de pensamiento, de expresión y de
-                        cátedra conforme a la tradición externadista. Transparencia, deliberación respetuosa y
-                        participación democrática serán ejes de la gestión rectoral.
-                    </p>
-                    <S.FeaturesRowWrapper className="mt-4 mt-sm-5">
-                        <Col xs={12} sm={4} className="mb-5 mb-sm-0">
-                            <div className="h-100 d-flex flex-column align-items-center justify-content-end">
-                                <Image src={SocialCareImg} className="mb-3" />
-                                <S.LogoDescription>Respeto hacia la comunidad</S.LogoDescription>
-                            </div>
-                        </Col>
-                        <Col xs={12} sm={4} className="mb-5 mb-sm-0">
-                            <div className="h-100 d-flex flex-column align-items-center justify-content-end">
-                                <Image src={DialogsImg} className="mb-3" />
-                                <S.LogoDescription>Apertura al diálogo</S.LogoDescription>
-                            </div>
-                        </Col>
-                        <Col xs={12} sm={4} className="mb-4 mb-sm-0">
-                            <div className="h-100 d-flex flex-column align-items-center justify-content-end">
-                                <Image src={LoveImg} className="mb-3" />
-                                <S.LogoDescription>Encuentro humano</S.LogoDescription>
-                            </div>
-                        </Col>
-                    </S.FeaturesRowWrapper>
+                    <S.FeaturesWrapper className="mt-5">
+                        <PrincipleFeatureWrapper logo={SocialCareImg} title="Respeto hacia la comunidad">
+                            <p className="lead">
+                                Este valor se materializa mediante el <b>reconocimiento</b> de cada estudiante,
+                                profesor o profesora, funcionario o funcionaria y egresado o egresada de
+                                la comunidad universitaria, sus necesidades y puntos de vista. Serán ejes
+                                de la gestión rectoral la <b>transparencia, deliberación respetuosa,
+                                participación democrática y las políticas con enfoque de género</b>.
+                            </p>
+                        </PrincipleFeatureWrapper>
+                        <PrincipleFeatureWrapper logo={DialogsImg} title="Apertura al diálogo">
+                            <p className="lead">
+                                Esto significa la <b>eliminación de jerarquías absolutas</b> y la protección
+                                irrestricta de la <b>libertad de expresión</b> en la comunidad universitaria.
+                                Nos empeñaremos en la defensa de la libertad de pensamiento y de
+                                cátedra conforme a la tradición externadista.
+                            </p>
+                        </PrincipleFeatureWrapper>
+                        <PrincipleFeatureWrapper logo={LoveImg} title="Encuentro humano">
+                            <p className="lead">
+                                En esto se traduce nuestro slogan "<b>volvernos a encontrar</b>"
+                                que va más allá de un encuentro físico; es un encuentro anhelado
+                                por todos y sobre todo esperanzador, caracterizado por la tolerancia
+                                entre los miembros.
+                            </p>
+                        </PrincipleFeatureWrapper>
+                    </S.FeaturesWrapper>
                 </Fade>
             </S.ContainerWrapper>
         </section>
