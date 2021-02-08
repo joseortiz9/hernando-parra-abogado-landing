@@ -24,8 +24,8 @@ const LandingHeroSection = () => {
                                 Candidato a rector
                             </h1>
                             <p className="lead mt-2">
-                                Profesor <b>Emérito</b> y <b>abogado con más de 30
-                                años de experiencia</b> de la Universidad Externado de Colombia.
+                                Profesor <b>Emérito</b> de la <b>Universidad Externado de Colombia</b> y
+                                <b> abogado con más de 30 años de experiencia</b>.
                             </p>
                             <DefaultButton
                                 onClick={() => document.getElementById("video-section")?.scrollIntoView({behavior: "smooth"}) /*setShowVideoModal(true)*/}

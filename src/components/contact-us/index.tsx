@@ -5,7 +5,6 @@ import {ReactComponent as MailIcon} from "../../assets/figures/mail-icon.svg";
 import {DialogImgWrapper, SubtitleWrapper, TitleWrapper, LimitWidthWrapper} from "./styles";
 import {Fade} from "react-awesome-reveal";
 import {Timeline} from "react-twitter-widgets";
-import SpinLoader from "../../common/spinner";
 
 const ContactUsSection = () => {
     return(
@@ -38,14 +37,13 @@ const ContactUsSection = () => {
                     <Col xs={4}>
                         <iframe
                             title="hernando-instagram-plugin"
-                            src="https://www.instagram.com/p/CK4_IlPBFhx/embed"
+                            src="https://www.instagram.com/p/CLAbwymJxuu/embed"
                             width="100%" height="100%" style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder="0"
                             allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"/>
                     </Col>
                     <Col xs={4}>
                         <Timeline
                             dataSource={{ sourceType: "profile", screenName: "hernandoparran" }}
-                            onLoad={() => <SpinLoader />}
                             renderError={() => "Error Loading the twitter feed, please reload the page."}
                             // options={{ width: "400", height: "600" }}
                         />

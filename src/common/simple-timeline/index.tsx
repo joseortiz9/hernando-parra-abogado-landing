@@ -1,21 +1,21 @@
 import React from "react";
-import {VerticalTimelineElement} from "react-vertical-timeline-component";
 
 import {ExperiencesData} from "../../data/Experiences";
-import {VerticalTimelineWrapper, IconWrapper} from "./styles";
+import {VerticalTimelineWrapper, IconWrapper, VerticalTimelineElementWrapper} from "./styles";
 
 const SimpleTimeline = () => {
     return(
         <VerticalTimelineWrapper>
             {
                 ExperiencesData.map((item) => (
-                    <VerticalTimelineElement key={item.props.date} {...item.props}
-                                             icon={<IconWrapper />}
-                                             className='vertical-timeline-element--work'
+                    <VerticalTimelineElementWrapper key={item.props.date}
+                                             date={item.props.date}
+                                             icon={item.props.icon ? item.props.icon : <IconWrapper />}
+                                             className={item.props.icon ? "element-with-icon" : ""}
                                              contentStyle={{background: '#C1E5C0', color: '#023324', padding: "0.5rem", lineHeight: "18px" }}
                                              >
                         <span dangerouslySetInnerHTML={{__html: item.content}} />
-                    </VerticalTimelineElement>
+                    </VerticalTimelineElementWrapper>
                 ))
             }
         </VerticalTimelineWrapper>

@@ -10,6 +10,9 @@ const FeatureWrapper = styled(Card)`
     margin-left: 0;
     padding: 70px 16px 30px 16px;
   }
+  @media screen and (max-width: 991px) {
+    padding-right: 30px;
+  }
 `;
 
 const ImageWrapper = styled(Image)`
