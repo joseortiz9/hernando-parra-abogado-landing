@@ -214,7 +214,7 @@ const QuoteShapeWrapper = styled.div`
   }
   &::after {
     font-family: OpenSansRegular, sans-serif, Arial, Helvetica;
-    content: "- Profesor Hernando Parra";
+    content: "Profesor Hernando Parra";
     font-size: 16px;
     line-height: 28px;
     @media screen and (max-width: 578px) {

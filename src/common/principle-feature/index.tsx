@@ -2,7 +2,7 @@ import React, {FC} from "react";
 import {Image} from "react-bootstrap";
 import {FeatureTitle, FeatureWrapper} from "./styles";
 
-interface IFeatureProps {
+export interface IFeatureProps {
     title: string
     logo: string
 }

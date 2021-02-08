@@ -4,6 +4,7 @@ import OpenSansItalicFont from "../assets/fonts/Open_Sans/OpenSans-LightItalic.t
 import OpenSansLightFont from "../assets/fonts/Open_Sans/OpenSans-Light.ttf";
 import MontserratTitleFont from "../assets/fonts/Montserrat/Montserrat-Bold.ttf";
 import MontserratSubTitleFont from "../assets/fonts/Montserrat/Montserrat-SemiBold.ttf";
+import MontserratBlackFont from "../assets/fonts/Montserrat/Montserrat-Black.ttf";
 
 const GlobalStyle = createGlobalStyle`
     @font-face {
@@ -12,12 +13,17 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 700;
         src: url(${MontserratTitleFont});
     }
-    
     @font-face {
         font-family: MontserratSubTitle;
         font-style: normal;
         font-weight: 600;
         src: url(${MontserratSubTitleFont});
+    }
+    @font-face {
+        font-family: MontserratBlack;
+        font-style: normal;
+        font-weight: 900;
+        src: url(${MontserratBlackFont});
     }
     
     @font-face {

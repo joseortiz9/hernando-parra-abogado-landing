@@ -3,10 +3,15 @@ import {Col, Container, Image, Row} from "react-bootstrap";
 import TitleShadowed from "../../common/title-shadowed";
 import PlanPdf from "../../assets/documents/management-plan-final.pdf";
 import PlanImg from  "../../assets/management-plan-final.png";
+import Objective1Img from "../../assets/figures/principles/objetivo1.svg";
+import Objective2Img from "../../assets/figures/principles/objetivo2.svg";
+import Objective3Img from "../../assets/figures/principles/objetivo3.svg";
+import Objective4Img from "../../assets/figures/principles/objetivo4.svg";
 import DefaultButton from "../../common/default-button";
 import {ReactComponent as DownloadLogo} from "../../assets/figures/download_icon.svg";
 import {PlanImgWrapper, SectionWrapper} from "./styles";
 import {Fade} from "react-awesome-reveal";
+import PlanFeatureWrapper from "../../common/plan-feature";
 
 const ManagementPlanSection = () => {
     return(
@@ -44,6 +49,49 @@ const ManagementPlanSection = () => {
                         </Fade>
                     </Col>
                 </Row>
+
+                <div className="mt-5">
+                    <Fade direction="left" cascade damping={0.1}>
+                        <PlanFeatureWrapper
+                            title="Recuperar la importancia del capital humano como mayor activo y eje de la universidad"
+                            logo={Objective1Img} index="1" indexColor="#77BC1F">
+                            <p className="lead">
+                                Recuperaremos la mística y el valor de cada integrante de la comunidad
+                                externadista, de nuestros estudiantes, docentes y del personal administrativo.
+                                Vamos a revitalizar el recurso humano para favorecer la libre expresión, sin
+                                exclusiones por expresar las propias ideas, de manera que podamos construir un
+                                Externado donde todos seamos protagonistas.
+                            </p>
+                        </PlanFeatureWrapper>
+                        <PlanFeatureWrapper
+                            title='Construir nuestra visión estratégica, el “Proyecto externadista”, y adoptar un modelo de gestión basado en la planificación participativa '
+                            logo={Objective2Img} index="2" indexColor="#04B015">
+                            <p className="lead">
+                                Definiremos una bitácora para los próximos seis años, que siente las bases para las
+                                décadas venideras, mediante un proceso riguroso de planificación estratégica que
+                                realizaremos en forma deliberativa buscando el consenso con toda la comunidad externadista.
+                                Para definir nuestro rumbo, nos propondremos trabajar siempre en equipo.
+                            </p>
+                        </PlanFeatureWrapper>
+                        <PlanFeatureWrapper
+                            title="Aprovechar plenamente el inmenso potencial de la Universidad. "
+                            logo={Objective3Img} index="3" indexColor="#7AFFBB">
+                            <p className="lead">
+                                Trabajaremos para asegurar de nuevo su condición de institución ejemplar, faro de la
+                                formación y la generación de conocimiento para la transformación del país y la región.
+                            </p>
+                        </PlanFeatureWrapper>
+                        <PlanFeatureWrapper
+                            title="Transformar el modelo de gestión de la Universidad haciendo de la democracia, la participación y la transparencia los pilares fundamentales."
+                            logo={Objective4Img} index="4" indexColor="#C9E4A5">
+                            <p className="lead">
+                                La toma de decisiones debe ser eficiente y participativa. Por ello, es necesario
+                                fortalecer y definir las competencias de las instancias que participan en la vida
+                                universitaria.
+                            </p>
+                        </PlanFeatureWrapper>
+                    </Fade>
+                </div>
             </Container>
         </SectionWrapper>
     );
