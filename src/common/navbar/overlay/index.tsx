@@ -1,9 +1,10 @@
 import React from "react";
 import {OverlayContent, OverlayWrapper, CloseButtonWrapper} from "./styles";
-import {navsLanding} from "../../../router/NavsLanding";
-import NavLink from "../nav-link";
 import {useShowOverlay} from "../../../contexts/ShowOverlayProvider";
 import {SocialMediaContainer} from "../../../components";
+import {Image} from "react-bootstrap";
+import LogoImg from "../../../assets/logo_campaign.png";
+import NavsContainer from "../navs-container";
 
 const OverlayNavbar = () => {
     const {showOverlay, setShowOverlay} = useShowOverlay();
@@ -11,13 +12,8 @@ const OverlayNavbar = () => {
         <OverlayWrapper isOpen={showOverlay}>
             <CloseButtonWrapper onClick={() => setShowOverlay(false)} />
             <OverlayContent className="h-75 d-flex justify-content-center align-content-center flex-column">
-                {
-                    navsLanding.map((nav) => (
-                        <NavLink key={nav.hrefID} hrefID={nav.hrefID}>
-                            <span dangerouslySetInnerHTML={{__html: nav.content}} />
-                        </NavLink>
-                    ))
-                }
+                <span><Image src={LogoImg} height={40} width={60} className="mb-3" /></span>
+                <NavsContainer />
                 <SocialMediaContainer classes="mt-4" />
             </OverlayContent>
             <div className="py-4 text-center mt-auto text-white font-weight-bold">

@@ -13,6 +13,9 @@ const HeaderWrapper = styled.header`
       &:not(:last-child) {
         margin-right: 20px;
       }
+      &.router-link {
+        color: #219653;
+      }
     }
     @media (max-width: 768px) {
         padding: 1.5rem 1rem;

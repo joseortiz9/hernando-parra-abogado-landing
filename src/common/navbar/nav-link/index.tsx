@@ -1,18 +1,16 @@
-import React, {FC} from "react";
+import React from "react";
 import {Nav} from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 import {useShowOverlay} from "../../../contexts/ShowOverlayProvider";
 
-interface INavLinkProps {
-    hrefID: string
-}
-
-const NavLink: FC<INavLinkProps> = ({children, hrefID}) => {
+const NavLink = ({sectionID, hrefID, content}: INavLinkProps) => {
+    const history = useHistory();
     const { showOverlay, setShowOverlay } = useShowOverlay();
     const handleNavCLick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        if (hrefID) history.push(hrefID);
         e.preventDefault();
-        if (showOverlay)
-            setShowOverlay(false);
-        scrollTo(hrefID);
+        if (showOverlay) setShowOverlay(false);
+        if (sectionID) scrollTo(sectionID);
     };
     const scrollTo = (id: string) => {
         const element = document.getElementById(id);
@@ -21,8 +19,8 @@ const NavLink: FC<INavLinkProps> = ({children, hrefID}) => {
         });
     };
     return(
-        <Nav.Link onClick={handleNavCLick}>
-            {children}
+        <Nav.Link className={hrefID && "router-link"} onClick={handleNavCLick}>
+            <span dangerouslySetInnerHTML={{__html: content}} />
         </Nav.Link>
     );
 };

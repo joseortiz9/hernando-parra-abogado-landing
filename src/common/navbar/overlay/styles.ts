@@ -36,6 +36,12 @@ const OverlayContent = styled.div`
     &:hover, &:focus {
       color: ${darken(0.4, "#FFF")};
     }
+    &.router-link {
+      color: #219653;
+      &:hover, &:focus {
+        color: ${darken(0.1, "#219653")};
+      }
+    }
     @media screen and (max-width: 575px) {
       padding: 18px 8px;
       font-size: 18px;

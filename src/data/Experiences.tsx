@@ -62,7 +62,7 @@ export const ExperiencesData = [
             icon: <Image src={ExternadoLogo} />,
         },
         content:
-            'Monitor de <b>cátedra de Obligaciones</b>',
+            'Monitor de la <b>cátedra de Obligaciones</b>',
     },
     {
         props: {

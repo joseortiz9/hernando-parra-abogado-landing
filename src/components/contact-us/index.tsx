@@ -26,12 +26,13 @@ const ContactUsSection = () => {
                     </div>
                 </Fade>
                 {(window.innerWidth > 768) &&
-                <Row className="d-none d-md-flex mt-5" style={{height: "505px"}}>
+                <Row className="d-none d-md-flex mt-5">
                     <Col xs={4}>
                         <iframe
                             title="hernando-facebook-plugin"
                             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHernandoParraN%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=2275317369278852"
-                            width="100%" height="100%" style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder="0"
+                            width="100%" height="600" style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder="0"
+                            onError={() => "Error loading the facebook frame, seems the page was deleted or is down."}
                             allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"/>
                     </Col>
                     <Col xs={4}>
@@ -39,13 +40,14 @@ const ContactUsSection = () => {
                             title="hernando-instagram-plugin"
                             src="https://www.instagram.com/p/CLAbwymJxuu/embed"
                             width="100%" height="100%" style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder="0"
+                            onError={() => "Error loading the instagram frame, seems the page was deleted or is down."}
                             allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"/>
                     </Col>
                     <Col xs={4}>
                         <Timeline
                             dataSource={{ sourceType: "profile", screenName: "hernandoparran" }}
                             renderError={() => "Error Loading the twitter feed, please reload the page."}
-                            // options={{ width: "400", height: "600" }}
+                            options={{ height: "600" }}
                         />
                     </Col>
                 </Row>
