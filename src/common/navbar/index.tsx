@@ -14,11 +14,11 @@ const Navbar = ({isAtTop}: INavbarProps) => {
     return (
         <BootstrapNavbar fixed="top">
             <Container>
-                <span className="d-md-none">
+                <span className="d-lg-none">
                     <HamburgMenu />
                 </span>
                 <NavbarBrand as={Link} to="/"><Image src={LogoImg} height={40} /></NavbarBrand>
-                <Nav className="mr-auto d-none d-md-flex">
+                <Nav className="mr-auto d-none d-lg-flex">
                     <NavsContainer />
                 </Nav>
                 <Nav>

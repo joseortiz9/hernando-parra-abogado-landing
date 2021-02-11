@@ -11,7 +11,10 @@ const HeaderWrapper = styled.header`
       color: #18191F;
       letter-spacing: 0.05em;
       &:not(:last-child) {
-        margin-right: 20px;
+        margin-right: 10px;
+        @media screen and (min-width: 992px) {
+          margin-right: 15px;
+        }
       }
       &.router-link {
         color: #219653;
