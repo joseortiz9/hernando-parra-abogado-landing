@@ -3,7 +3,7 @@ interface INavsArray extends Array<INavLinkProps>{}
 
 export const LandingNavs: INavsArray = [
     {
-        sectionID: "time-to-change",
+        sectionID: "intro-banner",
         content: "Inicio"
     },
     {
