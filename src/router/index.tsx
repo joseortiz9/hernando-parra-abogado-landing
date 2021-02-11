@@ -4,10 +4,12 @@ import GlobalStyle from "../styles/GlobalStyles";
 import routes from "./routes";
 import {Header, Footer} from "../components";
 import SpinLoader from "../common/spinner";
+import ScrollToTop from "../common/scroll-to-top";
 
 const Router = () => {
     return (
         <Suspense fallback={<SpinLoader />}>
+            <ScrollToTop />
             <GlobalStyle />
             <Header />
             <Switch>

@@ -1,6 +1,6 @@
 import React from "react";
 import {Nav} from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import {useShowOverlay} from "../../../contexts/ShowOverlayProvider";
 
 const NavLink = ({sectionID, hrefID, content}: INavLinkProps) => {

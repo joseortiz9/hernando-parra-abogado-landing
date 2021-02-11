@@ -16,7 +16,6 @@ const Home = () => {
     return(
         <ShowVideoModalProvider>
             <VideoModal videoTag="iframe" videoUrl="https://www.youtube.com/embed/T3-StLLMRGk" />
-            <ScrollToTop />
             <LandingHeroSection />
             <TimeToChangeSection />
             <div className="bgSectionsWrapper">

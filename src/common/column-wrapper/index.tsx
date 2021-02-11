@@ -27,7 +27,7 @@ const Column = ({logoAuthor, author, intro, title, subtitle, date, content}: ICo
                 </Card.Body>
             </ColumnWrapper>
 
-            <ModalWrapper show={showModal} onHide={() => setShowModal(false)} size="lg">
+            <ModalWrapper show={showModal} onHide={() => setShowModal(false)} dialogClassName="modal-70w">
                 <Modal.Header closeButton>
                     <div className="d-flex align-items-center">
                         <Image src={logo} className="mr-2" roundedCircle />

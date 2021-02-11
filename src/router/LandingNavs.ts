@@ -22,6 +22,10 @@ export const LandingNavs: INavsArray = [
 
 export const RouterNavs: INavsArray = [
     {
+        hrefID: "/",
+        content: "Externado2027"
+    },
+    {
         hrefID: "columns",
         content: "Columnas"
     },

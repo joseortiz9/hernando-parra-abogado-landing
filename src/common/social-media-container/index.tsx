@@ -15,7 +15,7 @@ const SocialMediaContainer = ({classes = "", bgStyle = "white"}: ISocialMediaCon
     return (
         <div className={classes}>
             <SocialIconWrapper logoComponent={LogoInstagram} bgStyle={bgStyle} url="https://instagram.com/hernandoparran" />
-            <SocialIconWrapper logoComponent={LogoFacebook} bgStyle={bgStyle} url="https://www.facebook.com/HernandoParraN" />
+            <SocialIconWrapper logoComponent={LogoFacebook} bgStyle={bgStyle} url="https://www.facebook.com/hernando.parranieto" />
             <SocialIconWrapper logoComponent={LogoTwitter} bgStyle={bgStyle} url="https://twitter.com/hernandoparran" lastElement />
         </div>
     );

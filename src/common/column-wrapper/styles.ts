@@ -12,7 +12,15 @@ const ColumnWrapper = styled(Card)`
 const ModalWrapper = styled(Modal)`
   border: none;
   .modal-70w {
-    width: 60%;
+    @media screen and (min-width: 576px) {
+      width: 85%;
+    }
+    @media screen and (min-width: 992px) {
+      width: 70%;
+    }
+    @media screen and (min-width: 1800px) {
+      width: 60%;
+    }
     max-width: none!important;
   }
   .modal-header {
@@ -26,15 +34,15 @@ const ModalWrapper = styled(Modal)`
   .modal-body {
     padding: 25px;
     h1 {
-    font-family: MontserratTitle, sans-serif, Arial, Helvetica;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+        font-family: MontserratTitle, sans-serif, Arial, Helvetica;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
     }
     .italic-subtitle {
-    font-family: OpenSansItalic, sans-serif, Arial, Helvetica;
-    font-size: 14px;
-    line-height: 28px;
+        font-family: OpenSansItalic, sans-serif, Arial, Helvetica;
+        font-size: 14px;
+        line-height: 25px;
     }
   }
 `;

@@ -4,6 +4,7 @@ import {SocialMediaContainer} from "../../components";
 import HamburgMenu from "../hamburg-menu";
 import LogoImg from "../../assets/logo_campaign.png";
 import NavsContainer from "./navs-container";
+import {Link} from "react-router-dom";
 
 interface INavbarProps {
     isAtTop: boolean
@@ -16,7 +17,7 @@ const Navbar = ({isAtTop}: INavbarProps) => {
                 <span className="d-md-none">
                     <HamburgMenu />
                 </span>
-                <NavbarBrand><Image src={LogoImg} height={40} /></NavbarBrand>
+                <NavbarBrand as={Link} to="/"><Image src={LogoImg} height={40} /></NavbarBrand>
                 <Nav className="mr-auto d-none d-md-flex">
                     <NavsContainer />
                 </Nav>
