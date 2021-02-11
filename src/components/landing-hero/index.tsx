@@ -7,9 +7,10 @@ import { ReactComponent as PlayVideoLogo } from "../../assets/figures/video_icon
 import { ReactComponent as QuoteLogo } from "../../assets/figures/comillas.svg";
 import { ReactComponent as ArrowSvg } from "../../assets/figures/arrow.svg";
 import {Fade, Zoom} from "react-awesome-reveal";
+import {useVideoModal} from "../../contexts/ShowVideoModalProvider";
 
 const LandingHeroSection = () => {
-    // const { setShowVideoModal } = useVideoModal();
+    const { setShowVideoModal } = useVideoModal();
     return (
         <S.LandingHeroWrapper className="pt-0" id="intro-banner">
             <S.DotsDarkGreenShapeWrapper className="d-none d-md-flex" />
@@ -28,7 +29,7 @@ const LandingHeroSection = () => {
                                 <b> abogado con más de 30 años de experiencia</b>.
                             </p>
                             <DefaultButton
-                                onClick={() => document.getElementById("video-section")?.scrollIntoView({behavior: "smooth"}) /*setShowVideoModal(true)*/}
+                                onClick={() => setShowVideoModal(true)}
                                 className="btn-success d-none d-sm-block w-auto btn-lg mt-1 mt-sm-4"
                             >
                                 <PlayVideoLogo stroke="white" className="mr-1" />

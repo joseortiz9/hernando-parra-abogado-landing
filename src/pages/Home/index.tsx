@@ -8,14 +8,13 @@ import {
     TimeToChangeSection,
     VideoSection
 } from "../../components";
-import ScrollToTop from "../../common/scroll-to-top";
 import ShowVideoModalProvider from "../../contexts/ShowVideoModalProvider";
 import VideoModal from "../../common/video-modal";
 
 const Home = () => {
     return(
         <ShowVideoModalProvider>
-            <VideoModal videoTag="iframe" videoUrl="https://www.youtube.com/embed/T3-StLLMRGk" />
+            <VideoModal videoTag="iframe" videoUrl="https://www.youtube.com/embed/L99qBAhTcYw" />
             <LandingHeroSection />
             <TimeToChangeSection />
             <div className="bgSectionsWrapper">
