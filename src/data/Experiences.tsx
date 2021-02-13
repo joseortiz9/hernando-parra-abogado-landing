@@ -12,20 +12,6 @@ export const ExperiencesData = [
     },
     {
         props: {
-            date: '2013 - 2021',
-        },
-        content:
-            'Miembro del Consejo Directivo <b>UniTec</b>',
-    },
-    {
-        props: {
-            date: '2012 - 2018',
-        },
-        content:
-            'Miembro del Consejo Directivo <b>UniMinuto</b>',
-    },
-    {
-        props: {
             date: '2011',
             icon: <Image src={ExternadoLogo} />,
         },
